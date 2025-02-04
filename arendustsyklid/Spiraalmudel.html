@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spiraal ArendusMudel</title>
+    <link rel="stylesheet" href="../css/Spiraalmudel.css">
 </head>
 <body>
     <!-- Pealkiri -->
@@ -99,7 +100,7 @@
 
 
     <!-- arendustsükli pilt -->
-    <img src="Images_for_Sten\SpiralModel.png" alt="Internet suck currently">
+    <img src="../Images_for_Sten/SpiralModel.png" alt="Internet suck currently">
 
     <!-- tabel mis loetleb spiraalse arenduse head ja vead -->
     <table>
@@ -141,5 +142,14 @@
 
     <!-- allikad: -->
     <a href="https://www.tlu.ee/~martins/pj/0sisse/0030000liigid.html">tlu spiraali ArendusMudel</a>
+
+    <a href="../index.html" class="back-button">⬅ Back to Home</a>
+
+    <button onclick="scrollToTop()" class="scroll-top">⬆ Top</button>
 </body>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </html>

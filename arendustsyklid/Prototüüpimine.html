@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototüüpimis ArendusMudel</title>
+    <link rel="stylesheet" href="../css/Prototüüpimine.css">
 </head>
 <body>
     <!-- Pealkiri -->
@@ -81,7 +82,7 @@
 
 
     <!-- arendustsükli pilt -->
-    <img src="Images_for_Sten\Prototyping-model.png" alt="Internet suck currently">
+    <img src="../Images_for_Sten/Prototyping-model.png" alt="Internet suck currently">
 
     <table>
         <thead>
@@ -123,5 +124,14 @@
 
     <!-- allikad: -->
     <a href="https://www.geeksforgeeks.org/software-engineering-phases-prototyping-model-set-2/">geeksforgeeks Prototüüpimis ArendusMudel</a>
+
+    <a href="../index.html" class="back-button">⬅ Back to Home</a>
+
+    <button onclick="scrollToTop()" class="scroll-top">⬆ Top</button>
 </body>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </html>

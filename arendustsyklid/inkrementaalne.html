@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inkrementaalne ArendusMudel</title>
+    <link rel="stylesheet" href="../css/inkrementaalne.css"/>
 </head>
 <body>
     
@@ -96,7 +97,7 @@
 
 
         <!-- arendustsükli pilt -->
-        <img src="Images_for_Sten\Incremental_Model.png" alt="Internet suck currently">
+        <img src="../Images_for_Sten/Incremental_Model.png" alt="Internet suck currently">
 
         <!-- tabel mis loetleb inkrementaalse arenduse head ja vead -->
         <table>
@@ -139,6 +140,15 @@
 
         <!-- allikad: -->
         <a href="https://www.guru99.com/what-is-incremental-model-in-sdlc-advantages-disadvantages.html">guru99 Inkrementaalne ArendusMudel</a>
+
+        <a href="../index.html" class="back-button">⬅ Back to Home</a>
+
+        <button onclick="scrollToTop()" class="scroll-top">⬆ Top</button>
     </p>
 </body>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </html>
