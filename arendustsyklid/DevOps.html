@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps ArendusMudel</title>
+    <link rel="stylesheet" href="../css/DevOps.css">
+</head>
+<body>
+    <!-- Pealkiri -->
+    <h1>DevOps ArendusMudel</h1>
+
+    <p>
+        DevOps on tarkvaraarenduse ja IT-operatsioonide integreeritud metoodika, <br>
+        mis keskendub pidevale arendusele, testimisele ja juurutamisele. <br>
+        See mudel ühendab arendajad ja IT-töövood, et kiirendada tarkvara <br>
+        väljalaskeid ja parandada süsteemide töökindlust. DevOps rõhutab <br>
+        automatiseerimist, pidevat integreerimist (CI) ja pidevat juurutamist (CD), <br>
+        et tagada kiire ja tõhus arendusprotsess. <br>
+    </p>
+
+    <!-- DevOps etapid -->
+    <p>
+        <ol>
+            <li>
+                Planeerimine ja nõuete määratlemine:<br>
+                DevOps algab põhjalikust planeerimisest, kus määratakse eesmärgid, <br>
+                prioriteedid ja võimalikud riskid. Kasutatakse agiilset lähenemist, <br>
+                et vajadusel kohandada arendusprotsessi kiiresti.<br>
+            </li>
+            <li>
+                Koodi kirjutamine ja versioonihaldus:<br>
+                Arendajad kirjutavad koodi ning kasutavad versioonihaldust (nt Git), <br>
+                et hallata muudatusi ja tagada meeskonnatöö tõhusus.<br>
+            </li>
+            <li>
+                Pidev integratsioon ja testimine:<br>
+                Kasutatakse automatiseeritud testimist, et kontrollida koodi kvaliteeti <br>
+                ning ennetada võimalikke vigu enne juurutamist.<br>
+            </li>
+            <li>
+                Juurutamine ja monitooring:<br>
+                Tarkvara juurutatakse automaatselt tootmiskeskkonda, kus seda pidevalt <br>
+                jälgitakse ja analüüsitakse, et tagada stabiilsus ja jõudlus.<br>
+            </li>
+            <li>
+                Tagasiside ja täiustamine:<br>
+                Kogutakse andmeid süsteemi toimimise ja kasutajate tagasiside kohta, <br>
+                et teha vajalikud muudatused ja täiustused.<br>
+            </li>
+        </ol>
+    </p>
+
+    <!-- DevOps tsükli pilt -->
+    <img src="../Images_for_Sten/DevOpsCycle.jpeg" alt="Internet suck currently" style="float: left;width: 60%; max-width: 800px; margin: 20px auto; display: block;">
+
+    <!-- Tabel DevOps eeliste ja puudustega -->
+    <table>
+        <thead>
+            <tr>
+                <th>Omadus</th>
+                <th>Head</th>
+                <th>Vead</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Automatiseerimine</td>
+                <td>Vähendab käsitöö protsesse ja kiirendab arendust</td>
+                <td>Nõuab alguses suuri investeeringuid ja tööriistade seadistamist</td>
+            </tr>
+            <tr>
+                <td>Pidev integratsioon</td>
+                <td>Tagab koodi järjepideva testimise ja kvaliteedi</td>
+                <td>Vigade avastamine hilisemas etapis võib olla keerulisem</td>
+            </tr>
+            <tr>
+                <td>Kiire juurutamine</td>
+                <td>Uued funktsioonid jõuavad kiiremini kasutajateni</td>
+                <td>Halvasti testitud muudatused võivad põhjustada tõrkeid</td>
+            </tr>
+            <tr>
+                <td>Koostöö ja kommunikatsioon</td>
+                <td>Arendajad ja IT-meeskonnad töötavad tihedalt koos</td>
+                <td>Nõuab muutusi ettevõtte kultuuris ja tööprotsessides</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Allikad -->
+    <a href="https://shalb.com/blog/what-is-devops-and-where-is-it-applied">DevOps arendus mudel</a>
+
+    <a href="../index.html" class="back-button">⬅ Tagasi avalehele</a>
+
+    <button onclick="scrollToTop()" class="scroll-top">⬆ Üles</button>
+</body>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</html>
