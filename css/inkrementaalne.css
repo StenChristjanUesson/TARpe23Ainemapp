@@ -1,3 +1,5 @@
+/* Inkrementaalne css */
+
 body {
     font-family: 'Tahoma', sans-serif;
     background-color: #dff0d8; /* Light green background */
@@ -73,3 +75,4 @@ th {
 .scroll-top:hover {
     background-color: #666;
 }
+
