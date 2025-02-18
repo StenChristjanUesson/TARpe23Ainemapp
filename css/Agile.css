@@ -1,15 +1,42 @@
-/* Agile CSS */
-
-body {
+body, ol {
     font-family: 'Arial', sans-serif;
-    background-color: #e3f2fd; /* Hele sinine taust */
-    color: #1a237e;
+    background: linear-gradient(270deg, #1565c0, #e3f2fd);
+    background-size: 200% 200%;
+    animation: gradientWave 36s infinite ease-in-out;
     margin: 20px;
     padding: 20px;
+    transition: color 0.1s ease-in-out;
+}
+
+@keyframes gradientWave {
+    0% {
+        background-position: 0% 50%;
+        color: #1a237e;
+    }
+    25% {
+        background-position: 50% 50%;
+        color: #607d8b;
+    }
+    50% {
+        background-position: 100% 50%;
+        color: #e3f2fd; /* Matches background color to disappear */
+    }
+    75% {
+        background-position: 50% 50%;
+        color: #607d8b;
+    }
+    100% {
+        background-position: 0% 50%;
+        color: #1a237e;
+    }
+}
+
+h1, p, th, td {
+    color: inherit;
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
 }
 
 h1 {
-    color: #0d47a1;
     text-align: center;
 }
 
@@ -19,7 +46,6 @@ p {
 }
 
 ol {
-    background-color: #bbdefb;
     padding: 15px 15px 15px 40px;
     border-left: 5px solid #0d47a1;
     list-style-position: outside;

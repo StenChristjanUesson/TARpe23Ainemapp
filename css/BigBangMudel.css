@@ -1,30 +1,55 @@
-/* Big Bang CSS */
+/* Big Bang CSS with Gradient Animation and Consistent Text Visibility */
 
 body {
     font-family: 'Verdana', sans-serif;
-    background-color: #e6e6fa; /* Lavender background */
-    color: #222;
+    background: linear-gradient(270deg, #ff7f00, #ff1493); /* Big Bang Colors (Orange to Deep Pink) */
+    background-size: 200% 200%;
+    animation: gradientWave 36s infinite ease-in-out;
+    color: #fff; /* White text color for visibility */
     margin: 20px;
     padding: 20px;
+    transition: color 0.1s ease-in-out;
+}
+
+@keyframes gradientWave {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 h1 {
-    color: #4b0082;
+    color: #fff; /* White text for headings to stand out */
     text-align: center;
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
 }
 
 p {
     font-size: 18px;
     line-height: 1.6;
+    color: #fff; /* Ensure paragraphs are white for visibility */
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
 }
 
 ol {
-    background-color: #f0e6ff;
     padding: 15px 15px 15px 40px;
-    border-left: 5px solid #4b0082;
+    border-left: 5px solid #ff4500; /* Orange Red border */
     list-style-position: outside;
+    background: rgba(255, 255, 255, 0.6); /* Semi-transparent background to show gradient behind */
+    color: #000; /* Black text for good contrast and readability */
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
 }
-
 
 table {
     width: 100%;
@@ -33,14 +58,21 @@ table {
 }
 
 th, td {
-    border: 1px solid #4b0082;
+    border: 1px solid #f57c00; /* Darker Orange border */
     padding: 10px;
     text-align: left;
+    color: #fff; /* White text for visibility */
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
 }
 
 th {
-    background-color: #4b0082;
+    background-color: #d32f2f; /* Darker Red background for table headers */
     color: white;
+}
+
+td {
+    background: linear-gradient(270deg, #ff7f00, #ff1493); /* Gradient to match background */
+    color: white; /* White text for contrast */
 }
 
 .back-button {
