@@ -1,48 +1,59 @@
-/* Waterfall css */
+/* Waterfall CSS with Transparency */
 
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #f5f5dc; /* Beige background */
-    color: #222;
+    color: #222; /* Dark text for readability */
     margin: 20px;
     padding: 20px;
 }
 
+/* Header style */
 h1 {
-    color: #8b0000;
+    color: #8b0000; /* Dark red for the title */
     text-align: center;
 }
 
+/* Paragraphs with larger font size and increased line height */
 p {
     font-size: 18px;
     line-height: 1.6;
+    color: #222; /* Dark text for readability */
 }
 
+/* Ordered List style */
 ol {
-    background-color: #fff8dc;
+    background-color: rgba(255, 248, 220, 0.8); /* Light cream with transparency */
     padding: 15px 15px 15px 40px;
-    border-left: 5px solid #8b0000;
+    border-left: 5px solid #8b0000; /* Dark red border */
     list-style-position: outside;
+    color: #222; /* Dark text for readability */
 }
 
-
+/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
 }
 
 th, td {
-    border: 1px solid #8b0000;
+    border: 1px solid #8b0000; /* Dark red borders */
     padding: 10px;
     text-align: left;
 }
 
 th {
-    background-color: #8b0000;
+    background-color: #8b0000; /* Dark red for header */
     color: white;
 }
 
+td {
+    background-color: rgba(245, 245, 220, 0.8); /* Light beige with transparency */
+}
+
+/* Back button style */
 .back-button {
     position: absolute;
     top: 10px;
@@ -60,6 +71,7 @@ th {
     background-color: #555;
 }
 
+/* Scroll-to-top button */
 .scroll-top {
     position: fixed;
     bottom: 20px;
@@ -77,4 +89,3 @@ th {
 .scroll-top:hover {
     background-color: #666;
 }
-
