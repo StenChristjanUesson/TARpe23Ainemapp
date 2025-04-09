@@ -28,7 +28,6 @@
             100% { background: radial-gradient(circle 300px at var(--x) var(--y), rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 1)); }
         }
 
-        /* Noise or texture effect */
         .noise {
             position: absolute;
             top: 0;
@@ -53,11 +52,11 @@
 
         h1 {
             color: #fff;
-            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; /* Red glowing effect */
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
         }
 
         p {
-            color: #ddd; /* Lighter text for better visibility */
+            color: #ddd;
             text-shadow: 0 0 5px #ff0000;
         }
 
@@ -73,18 +72,17 @@
 
         a {
             text-decoration: none;
-            color: #b3b3b3; /* Lighter links for visibility */
+            color: #b3b3b3;
             font-size: 18px;
             font-weight: bold;
-            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Glowing effect on links */
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
         }
 
         a:hover {
             text-decoration: underline;
-            color: #ff6666; /* Change color on hover */
+            color: #ff6666;
         }
 
-        /* Raindrop effect */
         .raindrop {
             position: absolute;
             background: rgba(255, 255, 255, 0.6);
@@ -94,7 +92,6 @@
             animation: raindropAnimation 1s forwards;
         }
 
-        /* Expanding circle effect */
         .expanding-circle {
             position: absolute;
             background: rgba(255, 255, 255, 0.4);
@@ -151,40 +148,33 @@
     </div>
 
     <script>
-        // Update the background position based on the mouse movement
         document.addEventListener("mousemove", (e) => {
             document.documentElement.style.setProperty("--x", `${e.clientX}px`);
             document.documentElement.style.setProperty("--y", `${e.clientY}px`);
         });
 
-        // Function to create a raindrop effect
+
         function createRaindrop(event) {
-            // Create raindrop at mouse position
             const raindrop = document.createElement('div');
             raindrop.classList.add('raindrop');
             raindrop.style.left = `${event.clientX - 10}px`;
             raindrop.style.top = `${event.clientY - 10}px`;
             document.body.appendChild(raindrop);
 
-            // Create expanding circle effect
             const expandingCircle = document.createElement('div');
             expandingCircle.classList.add('expanding-circle');
-            expandingCircle.style.left = `${event.clientX - 50}px`; // Adjust size for circle expansion
-            expandingCircle.style.top = `${event.clientY - 50}px`; // Adjust size for circle expansion
+            expandingCircle.style.left = `${event.clientX - 50}px`; 
+            expandingCircle.style.top = `${event.clientY - 50}px`; 
             document.body.appendChild(expandingCircle);
 
-            // Remove raindrop after animation completes
             setTimeout(() => {
                 raindrop.remove();
-            }, 1000); // Matches the duration of the raindrop animation
-
-            // Remove expanding circle after animation completes
+            }, 1000);
+      
             setTimeout(() => {
                 expandingCircle.remove();
-            }, 2000); // Matches the duration of the expanding circle animation
+            }, 2000);
         }
-
-        // Add mousemove event listener to create raindrops more often
         document.body.addEventListener('mousemove', createRaindrop);
     </script>
 </body>
