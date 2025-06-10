@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suure Paugu ArendusMudel</title>
+    <link rel="stylesheet" href="../css/BigBangMudel.css">
+</head>
+<body>
+    <!-- Pealkiri -->
+    <h1>Suure Paugu ArendusMudel</h1>
+
+    <p>
+        Suure Paugu meetod on tarkvaraarenduse lähenemine, kus kogu süsteem arendatakse <br>
+        korraga ilma vahepealsete iteratsioonideta. See mudel ei kasuta vaheetappe ega <br>
+        varajast planeerimist, vaid keskendub kogu toote arendamisele ja selle lõplikule <br>
+        rakendamisele ühes etapis. Kuna puuduvad vahepealsed ülevaatused ja testimistsüklid, <br>
+        võib projekti edu või ebaõnnestumine selguda alles lõppjärgus.<br><br>
+    </p>
+
+    <!-- etapid ja nende kirjeldus -->
+    <p>
+        <ol>
+            <li>
+                Etapp - Nõuete määratlemine:<br>
+                Projekti alguses määratakse üldised nõuded ja eesmärgid, kuid detailplaneerimine <br>
+                jääb minimaalseks. Kuna see meetod ei kasuta iteratiivset arendust, toimub kogu töö <br>
+                korraga, ilma vaheetappideta.<br><br>
+            </li>
+            <li>
+                Etapp - Süsteemi täielik arendamine:<br>
+                Kogu süsteem arendatakse välja ühe arendustsükliga. Testimine ja muudatused tehakse <br>
+                alles pärast arenduse lõppu, mis võib kaasa tuua suuri riske, kui ilmnevad vead või <br>
+                ootamatud probleemid.<br><br>
+            </li>
+            <li>
+                Etapp - Testimine ja parandused:<br>
+                Pärast arenduse lõppu toimub süsteemi täielik testimine. Kuna testimine on koondatud <br>
+                arenduse lõppu, võivad probleemid ilmneda hilja ja nende parandamine võib olla kulukas <br>
+                ning aeganõudev.<br><br>
+            </li>
+            <li>
+                Etapp - Väljalase:<br>
+                Kui testimine on lõpule viidud ja võimalikud vead parandatud, tehakse süsteemi <br>
+                lõplik rakendamine. Kuna arendus on toimunud ühekordselt, võib lõplik toode erineda <br>
+                algsetest ootustest.<br><br>
+            </li>
+        </ol>
+    </p>
+
+    <!-- arendustsükli pilt -->
+    <img src="../Images_for_Sten/BigBangModel.png" alt="Internet suck currently">
+
+    <!-- tabel mis loetleb Suure Paugu arenduse head ja vead -->
+    <table>
+        <thead>
+            <tr>
+                <th>Omadus</th>
+                <th>Head</th>
+                <th>Vead</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Planeerimise vajadus</td>
+                <td>Väike planeerimisvajadus võimaldab kiiret alustamist</td>
+                <td>Puudulik planeerimine võib viia vigade ja ootamatute probleemideni</td>
+            </tr>
+            <tr>
+                <td>Paindlikkus</td>
+                <td>Kõik muudatused tehakse korraga, ilma iteratsioonideta</td>
+                <td>Kui midagi läheb valesti, võib see nõuda suurt ümbertegemist</td>
+            </tr>
+            <tr>
+                <td>Arenduse kiirus</td>
+                <td>Kiire arendusprotsess, kuna kogu töö toimub korraga</td>
+                <td>Testimine toimub hilja, mistõttu võib vigade parandamine olla keeruline</td>
+            </tr>
+            <tr>
+                <td>Tagasiside</td>
+                <td>Ei ole varajase tagasiside vajadust, kogu töö tehakse ühe korraga</td>
+                <td>Kliendi ootuste mittevastavus võib ilmneda alles lõpus</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- allikad: -->
+    
+    <a href="https://www.professionalqa.com/big-bang-sdlc-model">professionalqa Big Bang Arendus Mudel</a>
+
+    <a href="../index.html" class="back-button">⬅ Back to Home</a>
+
+    <button onclick="scrollToTop()" class="scroll-top">⬆ Top</button>
+</body>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+</html>

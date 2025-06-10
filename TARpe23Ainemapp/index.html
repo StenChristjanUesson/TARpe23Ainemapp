@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arendusmudelid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle 300px at var(--x) var(--y), rgba(20, 20, 20, 0.9), rgba(0, 0, 0, 1));
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background-size: 100%;
+            animation: flicker 3s infinite;
+        }
+
+        @keyframes flicker {
+            0% { background: radial-gradient(circle 300px at var(--x) var(--y), rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 1)); }
+            25% { background: radial-gradient(circle 300px at var(--x) var(--y), rgba(15, 15, 15, 0.9), rgba(0, 0, 0, 1)); }
+            50% { background: radial-gradient(circle 300px at var(--x) var(--y), rgba(40, 40, 40, 0.8), rgba(0, 0, 0, 1)); }
+            75% { background: radial-gradient(circle 300px at var(--x) var(--y), rgba(20, 20, 20, 0.9), rgba(0, 0, 0, 1)); }
+            100% { background: radial-gradient(circle 300px at var(--x) var(--y), rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 1)); }
+        }
+
+        /* Noise or texture effect */
+        .noise {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/transparent-grunge.png');
+            opacity: 0.2;
+            pointer-events: none;
+        }
+
+        .container {
+            background: rgba(50, 50, 50, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            width: 50%;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #fff;
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000; /* Red glowing effect */
+        }
+
+        p {
+            color: #ddd; /* Lighter text for better visibility */
+            text-shadow: 0 0 5px #ff0000;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #eee;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #b3b3b3; /* Lighter links for visibility */
+            font-size: 18px;
+            font-weight: bold;
+            text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000; /* Glowing effect on links */
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff6666; /* Change color on hover */
+        }
+
+        /* Raindrop effect */
+        .raindrop {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+            animation: raindropAnimation 1s forwards;
+        }
+
+        /* Expanding circle effect */
+        .expanding-circle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: expandingCircleAnimation 2s forwards;
+        }
+
+        @keyframes raindropAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+        }
+
+        @keyframes expandingCircleAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(5);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="container">
+        <h1>Arendusmudelid</h1>
+        <p>Valige tarkvaraarenduse mudel, mida soovite uurida:</p>
+        <ul>
+            <li><a href="arendustsyklid/Prototüüpimine.html">Prototüüpimine</a></li>
+            <li><a href="arendustsyklid/Spiraalmudel.html">Spiraalmudel</a></li>
+            <li><a href="arendustsyklid/waterfall.html">Waterfall (Kosemudel)</a></li>
+            <li><a href="arendustsyklid/inkrementaalne.html">Inkrementaalne mudel</a></li>
+            <li><a href="arendustsyklid/Agile.html">Agile mudel</a></li>
+            <li><a href="arendustsyklid/BigBangMudel.html">BigBang mudel</a></li>
+            <li><a href="arendustsyklid/DevOps.html">DevOps Cycle mudel</a></li>
+            <li><a href="arendustsyklid/ExtremeProgramming.html">ExtremeProgramming Arendus mudel</a></li>
+            <li><a href="arendustsyklid/V-ShapedMudel.html">V-ShapedMudel Arendus mudel</a></li>
+        </ul>
+        <h2>BitCoin Calculator</h2>
+        <ul>
+            <li> <a href="https://drive.google.com/file/d/1sproPdI1npYVOMhHYflCo_C9QZU7X4KR/view?usp=sharing">Bitcoin Flowchart</a> </li>
+        </ul>
+        <h2>Windows Forms ERD Programm</h2>
+        <ul>
+            <li> <a href="erdprog.html">ERD Programm</a> </li>
+        </ul>
+
+    </div>
+
+    <script>
+        // Update the background position based on the mouse movement
+        document.addEventListener("mousemove", (e) => {
+            document.documentElement.style.setProperty("--x", `${e.clientX}px`);
+            document.documentElement.style.setProperty("--y", `${e.clientY}px`);
+        });
+
+        // Function to create a raindrop effect
+        function createRaindrop(event) {
+            // Create raindrop at mouse position
+            const raindrop = document.createElement('div');
+            raindrop.classList.add('raindrop');
+            raindrop.style.left = `${event.clientX - 10}px`;
+            raindrop.style.top = `${event.clientY - 10}px`;
+            document.body.appendChild(raindrop);
+
+            // Create expanding circle effect
+            const expandingCircle = document.createElement('div');
+            expandingCircle.classList.add('expanding-circle');
+            expandingCircle.style.left = `${event.clientX - 50}px`; // Adjust size for circle expansion
+            expandingCircle.style.top = `${event.clientY - 50}px`; // Adjust size for circle expansion
+            document.body.appendChild(expandingCircle);
+
+            // Remove raindrop after animation completes
+            setTimeout(() => {
+                raindrop.remove();
+            }, 1000); // Matches the duration of the raindrop animation
+
+            // Remove expanding circle after animation completes
+            setTimeout(() => {
+                expandingCircle.remove();
+            }, 2000); // Matches the duration of the expanding circle animation
+        }
+
+        // Add mousemove event listener to create raindrops more often
+        document.body.addEventListener('mousemove', createRaindrop);
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Extreme Programming CSS with Big Bang Gradient Animation */
+
+/* General body styling */
+body {
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(270deg, #00b0b9, #ff1493); /* Big Bang gradient effect */
+    background-size: 200% 200%;
+    animation: gradientWave 36s infinite ease-in-out; /* Smooth gradient animation */
+    color: #333; /* Darker text for better readability */
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientWave {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header style */
+h1 {
+    color: #2f4f4f; /* Dark slate grey for the title */
+    text-align: center;
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
+}
+
+/* Paragraphs with larger font size and increased line height */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Dark text for better readability */
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
+}
+
+/* Ordered List style */
+ol {
+    background: rgba(250, 250, 210, 0.8); /* Semi-transparent background to show gradient behind */
+    padding: 15px 15px 15px 40px;
+    border-left: 5px solid #2f4f4f; /* Dark slate grey border */
+    list-style-position: outside;
+    color: #333; /* Dark text for contrast */
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* White table background for contrast */
+}
+
+th, td {
+    border: 1px solid #2f4f4f; /* Dark slate grey border */
+    padding: 10px;
+    text-align: left;
+    transition: color 0.05s ease-in-out; /* Faster transition for text color */
+}
+
+th {
+    background-color: #2f4f4f; /* Dark slate grey for the header */
+    color: white;
+}
+
+td {
+    background: linear-gradient(270deg, #00b0b9, #ff1493); /* Gradient to match the background */
+    color: #fff; /* White text for contrast */
+}
+
+/* Back button style */
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #4682b4; /* Steel blue for the back button */
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background-color: #5a9bd4; /* Lighter steel blue on hover */
+}
+
+/* Scroll-to-top button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #4682b4; /* Steel blue for the scroll-to-top button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.scroll-top:hover {
+    background-color: #5a9bd4; /* Lighter steel blue on hover */
+}
